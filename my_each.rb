@@ -1,13 +1,10 @@
-
-  def my_each(array) 
-  if block
+def my_each(array) 
+  
     i = 0
-    while i < array.size
+    while i < array.length
       yield(array[i])
       i += 1
     end
     array
-  else
-    puts "Not sure"
-  end
+
 end
